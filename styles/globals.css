@@ -165,3 +165,19 @@ li {
 .menulist_textbox {
   flex-basis: 70%;
 }
+
+.colorselector {
+  position: absolute;
+  left: 6px;
+  bottom: 26px;
+}
+.colorselector input {
+  background: transparent;
+  border: none;
+  color: transparent;
+  position: absolute;
+  appearance: none;
+  height: 48px;
+  top: -3px;
+  z-index: -1;
+}

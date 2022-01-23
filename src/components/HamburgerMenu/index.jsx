@@ -22,7 +22,7 @@ export default function HamburgerMenu(props) {
           <span></span>
         </div>
       </div>
-      <MenuItems navOpen={navOpen} />
+      <MenuItems navOpen={navOpen} canvasRef={canvasRef} ctxRef={ctxRef} />
     </>
   );
 }
