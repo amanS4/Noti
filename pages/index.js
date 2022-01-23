@@ -2,6 +2,7 @@ import Head from "next/head";
 import { useRef } from "react";
 import Canvas from "../src/components/Canvas";
 import HamburgerMenu from "../src/components/HamburgerMenu";
+import TextNoti from "../src/components/TextNoti";
 
 export default function Home() {
   const canvasRef = useRef(null);
@@ -17,7 +18,8 @@ export default function Home() {
         <link rel="icon" href="/images/notes.png" />
       </Head>
       <main className={"main"}>
-        <Canvas canvasRef={canvasRef} ctxRef={ctxRef} />
+        <TextNoti />
+        {/* <Canvas canvasRef={canvasRef} ctxRef={ctxRef} /> */}
         <HamburgerMenu canvasRef={canvasRef} ctxRef={ctxRef} />
       </main>
     </div>
